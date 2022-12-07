@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+#include <cmath>
+using namespace std;
+
+int main(void) {
+    
+    const int size = 12;
+    int m[size] = {10,8,9,9,11,5,8,7,7,6,12,0};
+    bool nul = false;
+
+    for (int i = 0; i < 12; i++)
+    {
+        if (m[i] == 0) 
+        {
+            cout << "Zero: " << i+1; nul = true;
+        }
+    }
+
+    if (!nul) 
+    {
+        cout << "Hasn't zeros" << endl;
+    }
+}
